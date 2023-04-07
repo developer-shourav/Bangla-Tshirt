@@ -3,7 +3,7 @@ import React from 'react';
 const Footer = () => {
     return (
         <div>
-            <h2>This is footer</h2>
+            <h2 style={{backgroundColor:'black', color:'white', padding:'40px', marginTop:'100px'}}>This is footer</h2>
         </div>
     );
 };
