@@ -4,10 +4,8 @@ const Cart = ({cart}) => {
    
     return (
         <div>
-            <h2>Order Summary</h2>
-            {
-                cart?.map( product => <p >id :{product?._id}</p>)
-            }
+            <h2>Order Summary: {cart.length}</h2>
+            
         </div>
     );
 };
