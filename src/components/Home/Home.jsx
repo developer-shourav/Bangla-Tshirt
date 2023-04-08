@@ -3,19 +3,19 @@ import { useLoaderData } from "react-router-dom";
 import TShirt from "../TShirt/TShirt";
 import Cart from "../Cart/Cart";
 import "./Home.css";
-
+import toast from 'react-hot-toast';
 const Home = () => {
   const tShirts = useLoaderData();
   const [cart, setCart] = useState([]);
 
   const handleAddToCart = (tShirt) => {
-    const isAdd = cart.find((product) => product?._id === tShirt?._id);
-    if (!isAdd) {
+    const isAdded = cart.find((product) => product?._id === tShirt?._id);
+    if (!isAdded) {
       const newCart = [...cart, tShirt];
       setCart(newCart);
     }
     else{
-        alert(`Sorry! '${tShirt?.name}' is already added.`)
+        toast(`Sorry!! You have already added '${tShirt?.name}' t-shirt.`)
     }
   };
 
