@@ -14,3 +14,8 @@ const Cart = ({cart, handleRemoveFromCart}) => {
 };
 
 export default Cart;
+
+/**
+ * CONDITIONAL RENDERING
+ * 1. 
+*/
